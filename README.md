@@ -28,8 +28,8 @@ Before using this project, make sure you have the following prerequisites instal
     - The AWS Command Line Interface (CLI) is used for interacting with Amazon S3. Install the AWS CLI by following the instructions [here](https://aws.amazon.com/cli/).
     -  Verify your AWS CLI installation by running `aws --version` in a new terminal.
 
-4. **PG4Admin and PostgreSQL:**
-    - Download and install PG4Admin and PostgreSQL. You can download PG4Admin from [here](https://www.pgadmin.org/download/) and PostgreSQL from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+4. **PGAdmin 4 and PostgreSQL:**
+    - Download and install PG4Admin and PostgreSQL. You can download PGAdmin 4 from [here](https://www.pgadmin.org/download/) and PostgreSQL from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
     - Create a sales_data database in PG4Admin for later use.
 
 5. **VSCODE with Python and SQLTools:**
@@ -103,7 +103,7 @@ git clone https://github.com/KannanThuvakaran/AiCore-Multinational-Retail-Data-C
 
 ### Creating a Star Schema Sales Database
 
-1. In pg4admin or using SQLTools in VSCode, connect to the PostgreSQL database to view the sales data. Run all the files in the `milestone_3_star_schema_sales_database/modify_table_data_types` directory to ensure all the tables in PostgreSQL are of the correct data types.
+1. In PGAdmin 4 or using SQLTools in VSCode, connect to the PostgreSQL database to view the sales data. Run all the files in the `milestone_3_star_schema_sales_database/modify_table_data_types` directory to ensure all the tables in PostgreSQL are of the correct data types.
 2. Run the primary keys and foreign key files in `milestone_3_star_schema_sales_database/primary_foreign_keys`to create primary and foreign keys to complete the star-based schema.
 
 ### Queries and Metrics
