@@ -45,7 +45,7 @@ Before using this project, make sure you have the following prerequisites instal
 
     ```bash
     conda env create -f mrdc_env.yaml
-    conda activate mrdc_final
+    conda activate mrdc
     ```
 ## Installation
 
@@ -89,7 +89,7 @@ git clone https://github.com/KannanThuvakaran/AiCore-Multinational-Retail-Data-C
 1. Ensure you have activated the Conda environment:
 
     ```bash
-    conda activate mrdc_final
+    conda activate mrdc
     ```
 2. Ensure you have the Aicore database creds and your own. An empty version can be found in the `create_database_credentials.yaml` file.
 
