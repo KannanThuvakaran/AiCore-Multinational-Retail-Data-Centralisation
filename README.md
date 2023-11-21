@@ -29,21 +29,23 @@ Before using this project, make sure you have the following prerequisites instal
     -  Verify your AWS CLI installation by running `aws --version` in a new terminal.
 
 4. **PG4Admin and PostgreSQL:**
-   - Download and install PG4Admin and PostgreSQL. Create a sales_data database in PG4Admin for later use.
+    - Download and install PG4Admin and PostgreSQL. You can download PG4Admin from [here](https://www.pgadmin.org/download/) and PostgreSQL from [here](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+    - Create a sales_data database in PG4Admin for later use.
 
 5. **VSCODE with Python and SQLTools:**
-    - Ensure Visual Studio Code (VSCode) is installed on your machine.
+    - Ensure Visual Studio Code (VSCode) is installed on your machine. You can download VSCODE from [here](https://code.visualstudio.com/download)
     - Install the Python extension for VSCode for a smooth development experience.
     - Install SQLTools extension in VSCode to facilitate SQL query execution.
 
 6. **Miniconda3 for Virtual Environments:**
-    - Install Miniconda3 to manage virtual environments easily.
+    - Install Miniconda3 to manage virtual environments easily. You can download Miniconda3 from [here](https://docs.conda.io/projects/miniconda/en/latest/)
     - The relevant Python libraries are pre-configured in mrdc_env.yaml. Complete the installation by executing:
 
     ```bash
     conda env create -f mrdc_env.yaml
     conda activate mrdc_final
     ```
+    -  Verify Miniconda3 installation by running `conda --version` in a new terminal.
 
 ## Installation
 
@@ -75,10 +77,10 @@ git clone https://github.com/KannanThuvakaran/AiCore-Multinational-Retail-Data-C
 - **milestone_4_data_querying**
   - `business_queries.sql`: SQL script for business-related queries.
 
-- `README.md`: Documentation file.
 - `.gitignore`: Gitignore file which include the database credentials and sales_data_credentials files.
-- `mrdc_env.yaml`: Conda environment configuration file.
+- `README.md`: Documentation file.
 - `create_database_credentials.yaml`: Database credentials configuration file.
+- `mrdc_env.yaml`: Conda environment configuration file.
 - `mrdc_main_script.py`: Main script for executing the centralization process.
 
 ## Usage
