@@ -10,7 +10,7 @@ WHERE
 GROUP BY 
     country_code
 ORDER BY 
-    total_no_stores DESC
+    total_no_stores DESC;
 
 
 -- Task 2: Which locations currently have the most stores?
@@ -140,7 +140,7 @@ WHERE
 GROUP BY
     store_type, country_code 
 ORDER BY
-    total_sales ASC
+    total_sales ASC;
 
 
 --Task 9: How quickly is the company making sales?
