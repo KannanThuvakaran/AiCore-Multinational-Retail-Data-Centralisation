@@ -39,14 +39,14 @@ Before using this project, make sure you have the following prerequisites instal
 
 6. **Miniconda3 for Virtual Environments:**
     - Install Miniconda3 to manage virtual environments easily. You can download Miniconda3 from [here](https://docs.conda.io/projects/miniconda/en/latest/)
+    -  Verify Miniconda3 installation by running `conda --version` in a new terminal.
+
     - The relevant Python libraries are pre-configured in mrdc_env.yaml. Complete the installation by executing:
 
     ```bash
     conda env create -f mrdc_env.yaml
     conda activate mrdc_final
     ```
-    -  Verify Miniconda3 installation by running `conda --version` in a new terminal.
-
 ## Installation
 
 Clone this repository to your local machine:
