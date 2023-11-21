@@ -1,6 +1,7 @@
-from utils.database_connector import DatabaseConnector
-from utils.data_extraction import DataExtractor
-from utils.data_cleaning import DataCleaning
+from milestone_2_utils.database_connector import DatabaseConnector
+from milestone_2_utils.data_extraction import DataExtractor
+from milestone_2_utils.data_cleaning import DataCleaning
+
 
 if __name__ == "__main__":
     # Connect to the AICore database 
