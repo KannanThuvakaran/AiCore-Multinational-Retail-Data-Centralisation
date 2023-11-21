@@ -106,7 +106,7 @@ git clone https://github.com/KannanThuvakaran/AiCore-Multinational-Retail-Data-C
 1. In PGAdmin 4 or using SQLTools in VSCode, connect to the PostgreSQL database to view the sales data. Run all the files in the `milestone_3_star_schema_sales_database/modify_table_data_types` directory to ensure all the tables in PostgreSQL are of the correct data types.
 2. Run the primary keys and foreign key files in `milestone_3_star_schema_sales_database/primary_foreign_keys`to create primary and foreign keys to complete the star-based schema.
 
-### Queries and Metrics
+### Queries
 
 Once the star-based schema is complete, run the business SQL queries to extract up-to-date metrics for the business. The queries from the business can be found in the `milestone_4_data_querying` directory.
 
