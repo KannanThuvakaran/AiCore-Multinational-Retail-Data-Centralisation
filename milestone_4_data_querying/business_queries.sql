@@ -1,4 +1,5 @@
--- Task 1
+-- Task 1: How many stores does the business have and in which countries?
+
 SELECT 
     country_code AS country,
     COUNT(country_code) AS total_no_stores    
@@ -11,7 +12,9 @@ GROUP BY
 ORDER BY 
     total_no_stores DESC
 
--- Task 2
+
+-- Task 2: Which locations currently have the most stores?
+
 SELECT
     locality AS locality,
     COUNT(locality) AS total_no_stores
@@ -26,7 +29,9 @@ HAVING
 ORDER BY 
     total_no_stores DESC;
 
--- Task 3
+
+-- Task 3: Which months produced the largest amount of sales?
+
 SELECT 
     ROUND(SUM(orders_table.product_quantity * dim_products.product_price)::numeric, 2) AS total_sales,
     dim_date_times.month
@@ -42,7 +47,9 @@ ORDER BY
     total_sales DESC
 LIMIT 6;
 
--- Task 4
+
+-- Task 4: How many sales are coming from online?
+
 SELECT
     COUNT(orders_table.product_quantity) AS numbers_of_sales,
     SUM(orders_table.product_quantity) AS product_quantity_count,
@@ -59,7 +66,9 @@ GROUP BY
 ORDER BY
     numbers_of_sales;
 
--- Task 5
+
+-- Task 5: What percentage of sales come through each type of store?
+
 SELECT
     dim_store_details.store_type AS store_type,
     ROUND(SUM(orders_table.product_quantity * dim_products.product_price)::numeric, 2) AS total_sales,
@@ -82,7 +91,8 @@ ORDER BY
     "percentage_total(%)" DESC;
 
 
---Task 6 
+--Task 6: Which month in each year produced the highest cost of sales?
+
 SELECT
     ROUND(SUM(orders_table.product_quantity * dim_products.product_price)::numeric, 2) AS total_sales,
     dim_date_times.year AS year,
@@ -99,7 +109,9 @@ ORDER BY
     total_sales DESC
 LIMIT 10;
 
---Task 7
+
+--Task 7: What is our staff headcount?
+
 SELECT
     SUM(staff_numbers) AS total_staff_numbers,
     country_code as country_code
@@ -110,7 +122,9 @@ GROUP BY
 ORDER BY
     total_staff_numbers DESC;
 
---Task 8
+
+--Task 8: Which German store type is selling the most?
+
 SELECT
     ROUND(SUM(orders_table.product_quantity * dim_products.product_price)::numeric, 2) AS total_sales,
     dim_store_details.store_type AS store_type,
@@ -128,7 +142,8 @@ GROUP BY
 ORDER BY
     total_sales ASC
 
---Task 9
+
+--Task 9: How quickly is the company making sales?
 
 WITH sales_date AS (
     SELECT 
