@@ -22,9 +22,9 @@ if __name__ == "__main__":
     cleaned_card_df = DataCleaning(dataframe=pdf_file).clean_card_data()
     card_details_to_sql = sales_data_db_connector.upload_to_db(cleaned_card_df, 'dim_card_details')
 
-    # List number of stores, retrieve store data, clean, and upload to sales data database
-    number_of_stores = DataExtractor().list_number_of_stores('https://aqj7u5id95.execute-api.eu-west-1.amazonaws.com/prod/number_stores', header={'x-api-key': 'yFBQbwXe9J3sd6zWVAMrK6lcxxr0q1lr2PT6DDMX'})
-    stores_data = DataExtractor().retrieve_stores_data(f'https://aqj7u5id95.execute-api.eu-west-1.amazonaws.com/prod/store_details/', number_of_stores, header={'x-api-key': 'yFBQbwXe9J3sd6zWVAMrK6lcxxr0q1lr2PT6DDMX'})
+    # List number of stores, retrieve store data, clean, and upload to sales data database and put your api-key
+    number_of_stores = DataExtractor().list_number_of_stores('https://aqj7u5id95.execute-api.eu-west-1.amazonaws.com/prod/number_stores', header={'x-api-key': 'your-api-key'})
+    stores_data = DataExtractor().retrieve_stores_data(f'https://aqj7u5id95.execute-api.eu-west-1.amazonaws.com/prod/store_details/', number_of_stores, header={'x-api-key': 'your-api-key'})
     cleaned_stores_data = DataCleaning(stores_data).clean_store_data()
     store_data_to_sql = sales_data_db_connector.upload_to_db(cleaned_stores_data, 'dim_store_details')
 
